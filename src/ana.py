@@ -30,7 +30,7 @@ def lookup_latlng(city_df, api_key=''):
     lat = []
     lng = []
     ggl_url = "https://maps.googleapis.com/maps/api/geocode/json?address="
-    api_key = "AIzaSyCrUUNVdkMhCcQ17u-WBjgDTQz2wDi5ng4"
+    api_key = "GOOGLE_API_KEY"
     # GEOCODING Lookup, by Google Maps API
     for w in city_l:
         print(w)
@@ -88,7 +88,7 @@ def get_ggl_image_sep(city_df, zoom=16, size=320, img_dir='../imgs/'):
     lng = city_df['lng']
     city_name = city_df['flg'].astype(str) + '_' + city_df['name'] + '_' + city_df['subcountry']
     im_type = "satellite"
-    api_key = "AIzaSyBG0yssmOa53O3uJf8HDD0ikoD3SioeD5M" # <- confidential
+    api_key = "GOOGLE_API_KEY"
     ggl_url = "https://maps.googleapis.com/maps/api/staticmap"
     cnt = 0
     # Scraping google map
